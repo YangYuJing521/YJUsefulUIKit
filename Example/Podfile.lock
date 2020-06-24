@@ -1,15 +1,58 @@
 PODS:
-  - YJUsefulUIKit (0.1.0)
+  - Masonry (1.1.0)
+  - SDWebImage (5.8.1):
+    - SDWebImage/Core (= 5.8.1)
+  - SDWebImage/Core (5.8.1)
+  - YJUsefulUIKit (1.0.0):
+    - YJUsefulUIKit/YJBaseCells (= 1.0.0)
+    - YJUsefulUIKit/YJBasicDepand (= 1.0.0)
+    - YJUsefulUIKit/YJCycleScrollow (= 1.0.0)
+    - YJUsefulUIKit/YJExtension (= 1.0.0)
+    - YJUsefulUIKit/YJGuidePageView (= 1.0.0)
+    - YJUsefulUIKit/YJNocrash (= 1.0.0)
+    - YJUsefulUIKit/YJProgressWKWebView (= 1.0.0)
+    - YJUsefulUIKit/YJToast (= 1.0.0)
+    - YJUsefulUIKit/YJUICommon (= 1.0.0)
+  - YJUsefulUIKit/YJBaseCells (1.0.0):
+    - YJUsefulUIKit/YJUICommon
+  - YJUsefulUIKit/YJBasicDepand (1.0.0):
+    - YJUsefulUIKit/YJExtension
+    - YJUsefulUIKit/YJUICommon
+  - YJUsefulUIKit/YJCycleScrollow (1.0.0):
+    - SDWebImage
+    - YJUsefulUIKit/YJUICommon
+  - YJUsefulUIKit/YJExtension (1.0.0):
+    - YJUsefulUIKit/YJUICommon
+    - YYCategories
+  - YJUsefulUIKit/YJGuidePageView (1.0.0)
+  - YJUsefulUIKit/YJNocrash (1.0.0)
+  - YJUsefulUIKit/YJProgressWKWebView (1.0.0):
+    - Masonry
+  - YJUsefulUIKit/YJToast (1.0.0)
+  - YJUsefulUIKit/YJUICommon (1.0.0):
+    - YJUsefulUIKit/YJNocrash
+  - YYCategories (1.0.4):
+    - YYCategories/no-arc (= 1.0.4)
+  - YYCategories/no-arc (1.0.4)
 
 DEPENDENCIES:
   - YJUsefulUIKit (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+    - YYCategories
 
 EXTERNAL SOURCES:
   YJUsefulUIKit:
     :path: "../"
 
 SPEC CHECKSUMS:
-  YJUsefulUIKit: 5a2e0d61a540aa2fe473abfe4e579d54a5f39528
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: e3eae2eda88578db0685a0c88597fdadd9433f05
+  YJUsefulUIKit: 604f6fca82b174c3bb7a39e42542aaa794658451
+  YYCategories: 6bcd4314c6661a561410dce4a793379ebd306abd
 
 PODFILE CHECKSUM: b448e6b525e777f82dfff50829270712b67f83e5
 

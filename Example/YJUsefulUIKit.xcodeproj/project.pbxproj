@@ -302,11 +302,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-YJUsefulUIKit_Example/Pods-YJUsefulUIKit_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/YJUsefulUIKit/YJUsefulUIKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YJUsefulUIKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

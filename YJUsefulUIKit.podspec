@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YJUsefulUIKit'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A short description of YJUsefulUIKit.'
 
 # This description is used to generate tags and improve search results.
@@ -30,11 +30,67 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'YJUsefulUIKit/Classes/**/*'
+  s.source_files = 'YJUsefulUIKit/Classes/YJUsefulUIKit.h'
   
-  # s.resource_bundles = {
-  #   'YJUsefulUIKit' => ['YJUsefulUIKit/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'YJUsefulUIKit' => ['YJUsefulUIKit/Assets/*/*.png']
+  }
+  
+  s.subspec 'YJBaseCells' do |ss|
+  ss.source_files = 'YJUsefulUIKit/Classes/YJBaseCells/*'
+  ss.frameworks = 'UIKit', 'Foundation'
+  ss.dependency 'YJUsefulUIKit/YJUICommon'
+  end
+
+  s.subspec 'YJNocrash' do |aa|
+  aa.source_files = 'YJUsefulUIKit/Classes/YJNocrash/*'
+  aa.frameworks = 'UIKit', 'Foundation'
+  end
+  
+  s.subspec 'YJToast' do |bb|
+  bb.source_files = 'YJUsefulUIKit/Classes/YJToast/*'
+  bb.frameworks = 'UIKit', 'Foundation', 'CoreGraphics'
+  end
+
+  s.subspec 'YJUICommon' do |cc|
+  cc.source_files = 'YJUsefulUIKit/Classes/YJUICommon/*'
+  cc.frameworks = 'UIKit', 'Foundation'
+  cc.dependency 'YJUsefulUIKit/YJNocrash'
+  end
+  
+   s.subspec 'YJExtension' do |dd|
+   dd.source_files = 'YJUsefulUIKit/Classes/YJExtension/*'
+   dd.frameworks = 'UIKit', 'Foundation', 'CoreText'
+   dd.dependency 'YYCategories'
+   dd.dependency 'YJUsefulUIKit/YJUICommon'
+   end
+
+   s.subspec 'YJCycleScrollow' do |ee|
+   ee.source_files = 'YJUsefulUIKit/Classes/YJCycleScrollow/*'
+   ee.frameworks = 'UIKit', 'Foundation'
+   ee.dependency 'YJUsefulUIKit/YJUICommon'
+   ee.dependency 'SDWebImage'
+   end
+
+
+   s.subspec 'YJProgressWKWebView' do |ff|
+   ff.source_files = 'YJUsefulUIKit/Classes/YJProgressWKWebView/*'
+   ff.frameworks = 'UIKit', 'Foundation', 'WebKit'
+   ff.dependency 'Masonry'
+   end
+
+   s.subspec 'YJGuidePageView' do |gg|
+   gg.source_files = 'YJUsefulUIKit/Classes/YJGuidePageView/*'
+   gg.frameworks = 'UIKit', 'Foundation'
+   end
+
+   s.subspec 'YJBasicDepand' do |hh|
+   hh.source_files = 'YJUsefulUIKit/Classes/YJBasicDepand/*'
+   hh.frameworks = 'UIKit'
+   hh.dependency 'YJUsefulUIKit/YJUICommon'
+   hh.dependency 'YJUsefulUIKit/YJExtension'
+   end
+
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

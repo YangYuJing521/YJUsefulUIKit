@@ -1,6 +1,6 @@
 {
   "name": "YJUsefulUIKit",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "summary": "A short description of YJUsefulUIKit.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/YangYuJing521/YJUsefulUIKit",
@@ -13,10 +13,128 @@
   },
   "source": {
     "git": "https://github.com/YangYuJing521/YJUsefulUIKit.git",
-    "tag": "0.1.0"
+    "tag": "1.0.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "YJUsefulUIKit/Classes/**/*"
+  "source_files": "YJUsefulUIKit/Classes/YJUsefulUIKit.h",
+  "resource_bundles": {
+    "YJUsefulUIKit": [
+      "YJUsefulUIKit/Assets/*/*.png"
+    ]
+  },
+  "subspecs": [
+    {
+      "name": "YJBaseCells",
+      "source_files": "YJUsefulUIKit/Classes/YJBaseCells/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ],
+      "dependencies": {
+        "YJUsefulUIKit/YJUICommon": [
+
+        ]
+      }
+    },
+    {
+      "name": "YJNocrash",
+      "source_files": "YJUsefulUIKit/Classes/YJNocrash/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ]
+    },
+    {
+      "name": "YJToast",
+      "source_files": "YJUsefulUIKit/Classes/YJToast/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "CoreGraphics"
+      ]
+    },
+    {
+      "name": "YJUICommon",
+      "source_files": "YJUsefulUIKit/Classes/YJUICommon/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ],
+      "dependencies": {
+        "YJUsefulUIKit/YJNocrash": [
+
+        ]
+      }
+    },
+    {
+      "name": "YJExtension",
+      "source_files": "YJUsefulUIKit/Classes/YJExtension/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "CoreText"
+      ],
+      "dependencies": {
+        "YYCategories": [
+
+        ],
+        "YJUsefulUIKit/YJUICommon": [
+
+        ]
+      }
+    },
+    {
+      "name": "YJCycleScrollow",
+      "source_files": "YJUsefulUIKit/Classes/YJCycleScrollow/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ],
+      "dependencies": {
+        "YJUsefulUIKit/YJUICommon": [
+
+        ],
+        "SDWebImage": [
+
+        ]
+      }
+    },
+    {
+      "name": "YJProgressWKWebView",
+      "source_files": "YJUsefulUIKit/Classes/YJProgressWKWebView/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation",
+        "WebKit"
+      ],
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
+      "name": "YJGuidePageView",
+      "source_files": "YJUsefulUIKit/Classes/YJGuidePageView/*",
+      "frameworks": [
+        "UIKit",
+        "Foundation"
+      ]
+    },
+    {
+      "name": "YJBasicDepand",
+      "source_files": "YJUsefulUIKit/Classes/YJBasicDepand/*",
+      "frameworks": "UIKit",
+      "dependencies": {
+        "YJUsefulUIKit/YJUICommon": [
+
+        ],
+        "YJUsefulUIKit/YJExtension": [
+
+        ]
+      }
+    }
+  ]
 }
