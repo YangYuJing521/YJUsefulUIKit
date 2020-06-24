@@ -2,8 +2,7 @@
 #ifndef YJBasicDepand_h
 #define YJBasicDepand_h
 
-#import "BDBaseController.h"
-#import "BDHideNavBaseController.h"
-#import "BDNavigationController.h"
-#import "macros.h"
+#import "YJBaseController.h"
+#import "YJHideNavBaseController.h"
+#import "YJNavigationController.h"
 #endif /* YJBasicDepand_h */
