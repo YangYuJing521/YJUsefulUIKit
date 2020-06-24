@@ -1,0 +1,16 @@
+PODS:
+  - YJUsefulUIKit (0.1.0)
+
+DEPENDENCIES:
+  - YJUsefulUIKit (from `../`)
+
+EXTERNAL SOURCES:
+  YJUsefulUIKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  YJUsefulUIKit: 5a2e0d61a540aa2fe473abfe4e579d54a5f39528
+
+PODFILE CHECKSUM: b448e6b525e777f82dfff50829270712b67f83e5
+
+COCOAPODS: 1.9.3
